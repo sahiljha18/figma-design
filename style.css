@@ -1,0 +1,456 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 1440px;
+    height: 152px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 38px 96px;
+
+    background: white;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.logo img {
+    width: 158px;
+    height: 76px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav {
+    width: 604px;
+    height: 37px;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    gap: 40px;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+nav ul li:first-child a {
+    width: 68px;
+    height: 37px;
+
+    padding: 10px 14px;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    background-color: #FFB400;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+nav ul li:nth-child(2) a {
+    width: 35px;
+    height: 37px;
+
+    padding: 10px 0;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+nav ul li:nth-child(3) a {
+    width: 67px;
+    height: 37px;
+
+    padding: 10px 0;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* =========================
+   PROJECTS NAV
+========================= */
+
+nav ul li:nth-child(4) a {
+    width: 55px;
+    height: 37px;
+
+    padding: 10px 0;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* =========================
+   RECOMMENDATIONS
+========================= */
+
+nav ul li:nth-child(5) a {
+    width: 125px;
+    height: 37px;
+
+    padding: 10px 0;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+nav ul li:nth-child(6) a {
+    width: 54px;
+    height: 37px;
+
+    padding: 10px 0;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 1439.377px;
+    height: 630px;
+
+    margin-left: 0.31px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    width: 90%;
+    max-width: 1244px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    row-gap: 40px;
+}
+
+
+/* =========================
+   PROJECT HEADING
+========================= */
+
+.projects-heading {
+    width: 654px;
+    max-width: 100%;
+
+    height: 100.26px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.projects-heading h1 {
+    width: 100%;
+    height: 41.26px;
+
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 750;
+    line-height: 16px;
+
+    text-align: center;
+
+    color: #2B2B2B;
+}
+
+.projects-heading p {
+    width: 100%;
+    height: 47px;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+
+    text-align: center;
+
+    color: #767676;
+}
+
+
+/* =========================
+   ROW 1 + ROW 2
+========================= */
+
+.row1,
+.row2 {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    width: 100%;
+    height: 432.45px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #0000001A;
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    min-width: 0;
+
+    /* Shadow for ALL cards */
+    box-shadow: 5px 5px 10px 0px #0000001A;
+}
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.project-card img {
+    width: 100%;
+    height: 202px;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-content {
+    width: 100%;
+    height: 176.45px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    padding: 16px 16px 20px 16px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.project-content h2 {
+    width: 100%;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    line-height: 24px;
+
+    color: #000000;
+}
+
+
+/* =========================
+   CARD DESCRIPTION
+========================= */
+
+.project-content p {
+    width: 100%;
+
+    margin: 0;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 13px;
+    font-weight: 400;
+
+    line-height: 20px;
+
+    color: #767676;
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.tags {
+    width: 100%;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+/* =========================
+   TAG
+========================= */
+
+.tags span {
+    height: 25.28px;
+
+    padding-left: 14px;
+    padding-right: 14px;
+
+    border: 1px solid #0000001A;
+
+    border-radius: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: #EFEFEF;
+
+    white-space: nowrap;
+}
