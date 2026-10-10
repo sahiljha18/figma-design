@@ -454,3 +454,116 @@ nav ul li:nth-child(6) a {
 
     white-space: nowrap;
 }
+
+
+.recommendations {
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    position: relative;
+}
+
+.description {
+    width: 502px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-inline: auto;
+}
+
+.description h1 {
+    width: 100%;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 124%;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2B2B2B;
+}
+
+.description p {
+    width: 100%;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #767676;
+}
+
+/* Horizontal scrolling carousel */
+.carousel {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior:smooth;
+    scrollbar-width: none;
+    cursor: grab;
+    padding-bottom: 5px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel:active {
+    cursor: grabbing;
+}
+
+/* Each review card */
+.carousel .r1,
+.carousel .r2,
+.carousel .r3 {
+    flex: 0 0 340px;
+    width: 340px;
+    height: 327.1px;
+    box-sizing: border-box;
+    border: 1px solid #0000001A;
+    border-radius: 8px;
+    overflow: hidden;
+    scroll-snap-align:center;
+    background: #FFFFFF;
+}
+
+.carousel .r1 img,
+.carousel .r2 img,
+.carousel .r3 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dots below the carousel */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.carousel-controls button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #FFB40080;
+    cursor: pointer;
+}
+
+.carousel-controls button.active {
+    background: #FFB400;
+}
+
